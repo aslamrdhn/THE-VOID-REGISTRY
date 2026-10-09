@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", monospace;
+  --color-void-bg: #000000;
+  --color-void-fg: #e6e6e6;
+  --color-void-muted: #7a7a7a;
+  --color-void-line: #e6e6e6;
+  --color-void-danger: #ff1e1e;
+  --color-void-ok: #3ddc84;
+}
+
+:root {
+  --bg: #000000;
+  --fg: #e6e6e6;
+  --muted: #7a7a7a;
+  --line: #e6e6e6;
+  --danger: #ff1e1e;
+  --ok: #3ddc84;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: "JetBrains Mono", monospace, monospace;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Brutalist base defaults */
+* {
+  border-color: var(--line);
+}
+
+button {
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+input, textarea, select {
+  border-radius: 0;
+}
+
+/* Subtle blink animation for remaining time < 1 hour */
+@keyframes void-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.animate-void-blink {
+  animation: void-blink 1s ease-in-out infinite;
+}

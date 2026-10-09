@@ -1,0 +1,8 @@
+{
+  "name": "THE VOID REGISTRY",
+  "description": "Situs anonim tanpa akun tempat orang menulis kegagalan yang otomatis hilang dalam 24 jam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
